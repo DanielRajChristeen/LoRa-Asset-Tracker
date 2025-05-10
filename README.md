@@ -19,15 +19,15 @@ A secure and energy-efficient asset tracking system leveraging LoRaWAN technolog
 
 ## 🧩 Hardware Used
 
-| Component                | Description                            |
-|-------------------------|----------------------------------------|
-| Wio-E5 Dev Board        | LoRaWAN module with STM32WLE5JC        |
-| Quectel L89 R2.0        | GNSS module for GPS                    |
-| LIS3DHTR                | 3-axis accelerometer                   |
-| MP2667                  | Power management IC                    |
-| Raspberry Pi 4B         | Gateway host system                    |
-| WM1302 LoRa Gateway     | LoRaWAN gateway module                 |
-| 3.6V Li-Po Battery      | Power source for node                  |
+| Component            | Description                            |
+|---------------------|----------------------------------------|
+| Wio-E5 Dev Board    | LoRaWAN module with STM32WLE5JC        |
+| Quectel L89 R2.0    | GNSS module for GPS                    |
+| LIS3DHTR            | 3-axis accelerometer                   |
+| MP2667              | Power management IC                    |
+| Raspberry Pi 4B     | Gateway host system                    |
+| WM1302 LoRa Gateway | LoRaWAN gateway module                 |
+| 3.6V Li-Po Battery  | Power source for node                  |
 
 ---
 
@@ -60,11 +60,17 @@ A secure and energy-efficient asset tracking system leveraging LoRaWAN technolog
 
 ## 📦 Payload Format
 
+The payload sent from the sensor node over LoRa follows a comma-separated string format:
 
-**Example:** `13.189707,80.106296,45.60,1,0`
+### 🧾 Field Descriptions
 
-- `emergency_status`: `1` = button pressed, `0` = normal  
-- `anomaly_status`: `1` = abnormal movement, `0` = normal  
+| Field              | Description                                |
+|-------------------|--------------------------------------------|
+| `latitude`         | GPS latitude in decimal degrees            |
+| `longitude`        | GPS longitude in decimal degrees           |
+| `altitude`         | Altitude in meters                         |
+| `emergency_status` | `1` = Panic button pressed, `0` = Normal   |
+| `anomaly_status`   | `1` = Anomaly detected, `0` = Normal       |
 
 ---
 
@@ -91,9 +97,9 @@ Anomaly detection is based on the **Mahalanobis Distance** algorithm to identify
 
 ## 📬 Alerts & Notifications
 
-- Geo-fence breach → Email/SMS/Telegram  
-- Emergency button press → Real-time alert  
-- Anomaly detection → Logged in dashboard  
+- **Geo-fence breach** → Email/SMS/Telegram  
+- **Emergency button press** → Real-time alert  
+- **Anomaly detection** → Logged in dashboard  
 
 ---
 
@@ -102,6 +108,13 @@ Anomaly detection is based on the **Mahalanobis Distance** algorithm to identify
 - Unique DevEUI, AppKey, and OTAA authentication  
 - Encrypted communication via LoRaWAN security stack  
 - Firebase HTTPS endpoints for secure data handling  
+
+---
+
+## 🎥 Project Overview Video
+
+📺 Watch the full project overview here:  
+[https://youtu.be/-xaInsjvY7k?si=eaUaM28JZm8MWVSY](https://youtu.be/-xaInsjvY7k?si=eaUaM28JZm8MWVSY)
 
 ---
 
@@ -122,13 +135,10 @@ Anomaly detection is based on the **Mahalanobis Distance** algorithm to identify
 
 This project is licensed under the **MIT License**.
 
-
 ---
 
 ## 🌐 Acknowledgements
 
-- Guided by **Dr. A. Karthikeyan**, Vel Tech Multi Tech  
+- Guided by **Dr. A. Karthikeyan**, M.E.., Ph.D., Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College. 
 - Thanks to **NEEVEE Technologies** for hardware guidance  
-- Supported by Anna University curriculum and Vel Tech ECE department  
-
----
+- Supported by Anna University curriculum and ECE department, Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College.
