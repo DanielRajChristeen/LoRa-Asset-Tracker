@@ -66,8 +66,8 @@ The payload sent from the sensor node over LoRa follows a comma-separated string
 
 | Field              | Description                                |
 |-------------------|--------------------------------------------|
-| `latitude`         | GPS latitude in decimal degrees            |
-| `longitude`        | GPS longitude in decimal degrees           |
+| `latitude`         | GNSS latitude in decimal degrees            |
+| `longitude`        | GNSS longitude in decimal degrees           |
 | `altitude`         | Altitude in meters                         |
 | `emergency_status` | `1` = Panic button pressed, `0` = Normal   |
 | `anomaly_status`   | `1` = Anomaly detected, `0` = Normal       |
