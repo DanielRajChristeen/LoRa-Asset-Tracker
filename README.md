@@ -118,7 +118,7 @@ Anomaly detection is based on the **Mahalanobis Distance** algorithm to identify
 
 ---
 
-## 📚 Authors
+## 📚 Contributors
 
 - **Adhikesavan M**  
 - **Daniel Raj C**  
