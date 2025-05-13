@@ -121,9 +121,9 @@ Anomaly detection is based on the **Mahalanobis Distance** algorithm to identify
 ## 📚 Contributors
 
 - **Adhikesavan M**  
-- **Daniel Raj C**  
+- [**Daniel Raj C**](https://github.com/DanielRajChristeen)  
 - **Dibesh S**  
-- **Hrithik Kumar J**
+- [**Hrithik Kumar J**](https://github.com/hrithikkumar1211)
 
 > Department of Electronics and Communication Engineering  
 > Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College  
